@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+body {
+   margin:0;
+   background-image:url("./static/Image1.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+}
+html {
+    height: 100%
+}
+.input-filed {
+    width: 100%;
+    padding: 2.5px;
+    outline: none;
+    }
+.input-field {
+    width: 105%;
+    padding: 2.5px;
+    outline: none;
+ }
+ .btn {
+    background-color:#ddd;
+    color: black;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    opacity: 1;
+ }
+ .btn1 {
+    background-color:blue;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+    opacity: 1;
+ }
+ .input-filed:focus {
+    border: 2px solid black;
+  }
+  .input-field:focus {
+    border: 2px solid black;
+  }
+  .btn:hover {
+    opacity: 1;
+  }
+  .btn1:hover {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+<center><h1>Diabetic Retinopathy Severity Level Identification</h1></center>
+<div style="max-width:400px;margin:auto">
+<div style="margin-top: 16%; box-shadow: 0 0 20px #ADD8E6;background-color: white;">
+    <br><h1 style="text-align:center;color:black">Login</h1>
+    <form name="Login" method="post" action=".">
+	<center>
+	<table cellpadding="3px">
+	<tr>
+		<th style="text-align:left">User Id:</th>
+		<td><input type="text" name="UserId" placeholder="Enter Your User Id" class="input-filed" required /></td>
+	</tr>
+	<tr>
+		<th style="text-align:left">Password:</th>
+		<td><input type="password" name="Password" placeholder="Enter Your Password" class="input-filed" required /></td>
+	</tr>
+	<tr>
+	<td>&nbsp </td>
+	<td>&nbsp </td>
+	</tr>
+	<tr>
+	<tr></tr>
+      <th align="center" colspan="2"><input class="btn" type="submit" value="Submit"/></th>
+	</tr>
+	</table>
+	<br>
+	<br>
+	</center>
+    </form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Patient Report</title>
+<style>
+body {
+   margin:0;
+   background-image:url("./static/Image1.jpg");
+   background-repeat: no-repeat;
+   background-size: 130% 130%;
+}
+html {
+    height: 100%
+}
+ .btn {
+    background-color:#ddd;
+    color: black;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 1;
+ }
+ .btn1 {
+    background-color:#ddd;
+    color: black;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 1;
+ }
+  .btn:hover {
+    opacity: 1;
+  }
+  .btn1:hover {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+<center><h1>Diabetic Retinopathy Severity Level Identification</h1></center>
+<div style="max-width:500px;margin:auto">
+<div style="margin-top: 8%; box-shadow: 0 0 20px #ADD8E6;background-color: white;">
+  <br><h1 style="text-align:center;color:black;">Patient Report</h1><br>
+    <form name="StudentRegistration" method="post" action="./">
+	<center>
+	<table cellpadding="5px">
+	<tr>
+		<th style="text-align:left">Full Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+		<td>{{name}}</td>
+	</tr>
+	<tr>
+		<th style="text-align:left">Mobile No:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+		<td>{{mobile}}</td>
+	</tr>
+	<tr>
+		<th style="text-align:left">Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+		<td>{{gender}}</td>
+	</tr>
+	<tr>
+		<th style="text-align:left">Age:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+		<td>{{age}}</td>
+	</tr>
+
+	<tr>
+		<th style="text-align:left">Diabetic Retinopathy:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+		<td>{{details[0][0]}}</td>
+	</tr>
+
+	<tr>
+		<th style="text-align:left">Severity Level:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+		<td>{{details[0][1]}}</td>
+	</tr>
+	
+	<tr>
+		<th style="text-align:left">Suggestions:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+	</tr>
+	<tr>
+		<td style="text-align:left" colspan=2>--{{r1}}</td>
+	</tr>
+	<tr>
+		<td style="text-align:left"colspan=2>--{{r2}}</td>
+	</tr>
+	<tr><th></th><td></td></tr>
+	<tr>
+		<th style="text-align:left">Click here to view Report</th>
+        <th align="left"><a href = "{{file_name}}" target="_blank">View Report</a></th>
+	</tr>
+	</table>
+	<br><br>
+	</center>
+</form>
+</div>
+</div>
+</body>
+</html>
